@@ -8,7 +8,7 @@
 
 电话：17521087305          邮箱：zhangyang89hi@126.com
 ```
-Github：https://zhangyang89hi.github.io/
+Github：https://github.com/zhangyang89hi/resume.git
 
 ### 教育经历
 ---
