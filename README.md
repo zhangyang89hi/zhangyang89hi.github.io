@@ -8,7 +8,7 @@
 
 电话：17521087305          邮箱：zhangyang89hi@126.com
 ```
-Github：https://github.com/zhangyang89hi/resume.git
+Github：https://zhangyang89hi.github.io/
 
 ### 教育经历
 ---
@@ -28,14 +28,16 @@ Github：https://github.com/zhangyang89hi/resume.git
 
 + 熟练使用Sass 、Gulp、Webpack等预处理/自动化构建工具进行前端工程化开发
 
-+ 熟悉Vue+Vuex及全家桶，了解框架实现原理，并有项目开发经验；
++ 熟悉Vue+Vuex及全家桶，了解框架实现原理，并有项目开发经验
 
-+ 理解Web,W3C标准 掌握基本的前端兼容性处理、跨浏览器适配，性能优化知识与技巧，有Web性能优化经验
++ 理解React/Redux的基本原理，能够快速的使用React技术栈进行项目开发
 
-+ 熟悉Linux操作，了解Node.js、express框架以及mysql等
++ 理解Web,W3C标准 掌握基本的前端兼容性处理、跨浏览器适配，性能优化知识与技巧
+
++ 熟悉Linux操作，了解Node.js、Express框架
 ### 工作经历/项目经历
 ---
-2016.05 - 2017.09          上海恒兆节能科技有限公司            软件开发工程师
+2016.05 - 2017.12          上海恒兆节能科技有限公司            软件开发工程师
 1. 公司网站建设和维护
 2. 配合架构师完成智能照明系统前端页面的开发工作
 3. 对照明控制系统进行调试，维护

@@ -1,18 +1,122 @@
-<html>
-  <head>
-  </head>
-  
-  <body>
-    <h1 style="text-align:center;">Hello Github</h1>
-    <p> This is my website.</p>
-    <ul  style="list-style: none;">
-    <li><img src="./picture/dashboard.png" style="width:300px;height:200px;" alt="dashboard"></li>
-    <li><img src="./picture/deviceMap.png" style="width:300px;height:200px" alt="deviceMap"></li>
-    <li><img src="./picture/deviceManage.png" style="width:300px;height:200px" alt="deviceManage"></li>
-    <li><img src="./picture/user.png" style="width:300px;height:200px" alt="user"></li>
-    <li><img src="./picture/warning.png" style="width:300px;height:200px" alt="warning"></li>
-    <li><img src="./picture/mobile.png" style="width:300px;height:200px" alt="mobile"></li>
-    </ul>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+  maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>zhangyang</title>
+</head>
+<style>
+  .resume{
+    width: 60%;
+    margin: auto;
+    min-width: 500px;
+  }
+  .show .slider{
+    width: 380px;
+    height: 240px;
+    /* border: solid 1px #000; */
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  .show .slider .sss{
+    position: absolute;
+    width: 2200px;
+    left: 0px;
+    /* border: solid 1px red; */
+    height: 240px;
+    transition: all  1.5s;
+  }
+  .show .slider .sss li{
+    float: left;
+    padding-right: 60px;
+    /* visibility: hidden; */
+    
+  }
+</style>
+<body>
+  <div class="resume">
+    <div class="basic">
+      <h3>基本信息</h3>
+      <p>姓名：张洋洋    性别：男    年龄：28    籍贯：河南新蔡</p>
+      <p>电话：17521087305          邮箱：zhangyang89hi@126.com</p>
+      <span>
+        Github: <a href="https://zhangyang89hi.github.io/">https://zhangyang89hi.github.io/</a>
+      </span>
+    </div>
+    <div class="education">
+      <h3>教育背景</h3>
+      <p>2007.9 - 2011.7    西安邮电大学    光电信息工程    本科  </p>
+      <p>2012.9 - 2015.7    西安工业大学    光学工程       研究生</p>
+      <p>大学英语四/六级（CET-4/6），良好的听说读写能力，能快速浏览英语专业文件及书籍</p>
+    </div>
+    <div class="skill">
+      <h3>工作技能</h3>
+      <ul>
+        <li>熟练掌握HTML/CSS/JavaScript，熟悉HTML5/CSS3/ES6新特性，</li>
+        <li>掌握jQuery / jQuery UI / Bootstrap 等前端框架的使用和开发</li>
+        <li>熟练使用Sass 、Gulp、Webpack等预处理/自动化构建工具进行前端工程化开发</li>
+        <li>熟悉Vue+Vuex及全家桶，了解框架实现原理，并有项目开发经验；</li>
+        <li>理解React/Redux的基本原理，能够快速的使用React技术栈进行项目开发</li>
+        <li>理解Web,W3C标准 掌握基本的前端兼容性处理、跨浏览器适配，性能优化知识与技巧</li>
+        <li>熟悉Linux基本操作，了解Node.js、Express框架</li>
+      </ul>
+    </div>
+    <div class="experience">
+      <h3>项目经历</h3>
+      <h4>2016.05 - 2017.12 上海恒兆节能科技有限公司 软件开发工程师</h4>
+      <ol>
+        <li>公司网站建设和维护</li>
+        <li>配合架构师完成智能照明系统前端页面的开发工作</li>
+        <li>对照明控制系统进行调试，维护</li>
+      </ol>
+      <p>基于ZigBee的无线照明web控制系统 项目描述：利用ZigBee无线通讯技术，对灯具进行远程管理，web前端采用Vue框架，使用了jQuery / jQuery UI / Bootstrap，该系统具有硬件管理、参数配置、灯具控制、场景控制、能耗展示、系统报告等功能 担任角色：在架构师的带领下，负责完成页面的开发、调试和适配工作，并根据项目中的使用情况进行调整和修改</p>
+    </div>
+    <div class="self">
+      <h3>自我评价</h3>
+      <p>具有良好的编程习惯和较强的的学习能力，良好的沟通能力，有团队合作精神和责任感，能够勇于承担重任。关注前端技术发展，喜欢研究新技术，熟悉web项目开发流程。</p>
+    </div>
+    <div class="show">
+      <h3>展示</h3>
+      <div class="slider">
+        <div class="sss">
+            <ul id="slider" style="list-style: none">
+              <li><img src="./picture/dashboard.png" style="width:300px;height:200px;" alt="dashboard"></li>
+              <li><img src="./picture/deviceMap.png" style="width:300px;height:200px" alt="deviceMap"></li>
+              <li><img src="./picture/deviceManage.png" style="width:300px;height:200px" alt="deviceManage"></li>
+              <li><img src="./picture/user.png" style="width:300px;height:200px" alt="user"></li>
+              <li><img src="./picture/warning.png" style="width:300px;height:200px" alt="warning"></li>
+              <li><img src="./picture/mobile.png" style="width:300px;height:200px" alt="mobile"></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
+</body>
+<script>
+  function slide(){
+    var dom = document.getElementById("slider");
+    var lii = dom.getElementsByTagName("li");
+    var i = 0;
+    setInterval(function(){
+      var li = document.getElementsByClassName('sss');
+      if(i==5)
+      {
+        li[0].style.transform = "translate(0px,0px)";
+      }
+      else{
+        var x = -360*i-360;
+        li[0].style.transform = "translate(" + x +"px,0px)";
+        console.log(x);
+      }
+      i++;
+      if(i>5)
+        i = 0;
+    }
+    , 5000);
+  };
+  slide();
+</script>
 </html>
