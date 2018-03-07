@@ -43,7 +43,7 @@ Github：https://github.com/zhangyang89hi/resume.git
 3. 对照明控制系统进行调试，维护
 
 基于ZigBee的无线照明web控制系统
-项目描述：利用ZigBee无线通讯技术，对灯具进行远程管理，web前端采用Vue框架，使用了jQuery / jQuery UI / Bootstrap，该系统具有硬件管理、参数配置、灯具控制、场景控制、能耗展示、系统报告等功能
+项目描述：利用ZigBee无线通讯技术，对灯具进行远程管理，web前端采用Vue框架，使用了jQuery / ECharts / Bootstrap，该系统具有硬件管理、参数配置、灯具控制、场景控制、能耗展示、系统报告等功能
 担任角色：在架构师的带领下，负责完成页面的开发、调试和适配工作，并根据项目中的使用情况进行调整和修改
 
 ### 自我评价
