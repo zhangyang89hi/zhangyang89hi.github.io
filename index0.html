@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,
   maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="./src/swiper-4.1.6.min.css">
   <title>zhangyang</title>
 </head>
 <style>
@@ -44,11 +43,28 @@
   .experience li{
     margin: 6px;
   }
-  .swiper-container .swiper-slide img{
-    display: block;
+  .show .slider{
+    width: 350px;
+    height: 240px;
+    /* border: solid 1px #000; */
+    position: relative;
+    transform: translate(-20px,0);
     margin: auto;
-    width:300px;
-    height:200px;
+    overflow: hidden;
+  }
+  .show .slider .sss{
+    position: absolute;
+    width: 2200px;
+    left: 0px;
+    /* border: solid 1px red; */
+    height: 240px;
+    transition: all  1.5s;
+  }
+  .show .slider .sss li{
+    float: left;
+    padding-right: 60px;
+    /* visibility: hidden; */
+    
   }
 </style>
 <body>
@@ -96,60 +112,45 @@
       <p>具有良好的编程习惯和较强的的学习能力，良好的沟通能力，有团队合作精神和责任感，能够勇于承担重任。关注前端技术发展，喜欢研究新技术，熟悉web项目开发流程。</p>
     </div>
     <div class="show">
-        <h3>展示</h3>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./picture/dashboard.png" alt="dashboard">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./picture/deviceMap.png" alt="deviceMap">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./picture/deviceManage.png" alt="deviceManage">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./picture/user.png" alt="user">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./picture/warning.png" alt="warning">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./picture/mobile.png" alt="mobile">
-                </div>
-            </div>
-            <!-- 分页器 -->
-            <div class="swiper-pagination"></div>
-            <!-- 导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <!-- 滚动条 -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+      <h3>展示</h3>
+      <div class="slider">
+        <div class="sss">
+            <ul id="slider" style="list-style: none">
+              <li><img src="./picture/dashboard.png" style="width:300px;height:200px;" alt="dashboard"></li>
+              <li><img src="./picture/deviceMap.png" style="width:300px;height:200px" alt="deviceMap"></li>
+              <li><img src="./picture/deviceManage.png" style="width:300px;height:200px" alt="deviceManage"></li>
+              <li><img src="./picture/user.png" style="width:300px;height:200px" alt="user"></li>
+              <li><img src="./picture/warning.png" style="width:300px;height:200px" alt="warning"></li>
+              <li><img src="./picture/mobile.png" style="width:300px;height:200px" alt="mobile"></li>
+            </ul>
         </div>
+      </div>
     </div>
   </div>
 
 </body>
-<script src="./src/swiper-4.1.6.min.js"></script>
 <script>
-    window.onload = function(){
-        var mySwiper = new Swiper('.swiper-container',{
-            direction:'horizontal',
-            speed: 300,
-            autoplay:true,
-            loop:true,
-
-            pagination:{
-                el:'.swiper-pagination',
-            },
-            navigation:{
-                nextEl:'.swiper-button-next',
-                prevEl:'.swiper-button-prev',
-            },
-            scrollbar:{
-                el: '.swiper-scrollbar',
-            }
-        });
+  function slide(){
+    var dom = document.getElementById("slider");
+    var lii = dom.getElementsByTagName("li");
+    var i = 0;
+    setInterval(function(){
+      var li = document.getElementsByClassName('sss');
+      if(i==5)
+      {
+        li[0].style.transform = "translate(0px,0px)";
+      }
+      else{
+        var x = -360*i-360;
+        li[0].style.transform = "translate(" + x +"px,0px)";
+        console.log(x);
+      }
+      i++;
+      if(i>5)
+        i = 0;
     }
+    , 5000);
+  };
+  slide();
 </script>
 </html>
